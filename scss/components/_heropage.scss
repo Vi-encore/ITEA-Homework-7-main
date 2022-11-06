@@ -1,0 +1,282 @@
+.heropage {
+  background-color: $dirtwhite;
+  display: flex;
+  flex-direction: column;
+
+  &__line {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__article {
+    width: $w-50;
+    display: flex;
+    flex-direction: column;
+    justify-content: $between;
+    align-items: $start;
+  }
+
+  &__img {
+    width: $w-100;
+    height: $w-100;
+  }
+
+  @media screen and(max-width: $s) {
+    &__line:first-child {
+      flex-direction: column;
+    }
+
+    &__line:last-child {
+      flex-direction: column-reverse;
+    }
+
+    &__article {
+      width: $w-100;
+    }
+  }
+
+  @media screen and (max-width: $xs) {
+    &__article {
+      width: $w-100;
+      height: $xs;
+    }
+  }
+}
+
+.article-1 {
+  padding: $pd-10-pc;
+
+  &__head {
+    font-size: $fz-xxl;
+  }
+
+  &__text {
+    font-size: $fz-m;
+    line-height: $l-141;
+  }
+
+  &__btn {
+    width: $w-45;
+    @include btn($fz-standart, $orange, $white, $pd-1);
+    @include transition;
+  }
+
+  &__btn:hover {
+    @include border(1px, $orange);
+    @include shadow;
+    @include btn-hover($transparent, $orange, $f-600);
+  }
+}
+.article-4 {
+  padding: $pd-9-pc;
+
+  &__btn {
+    width: $w-45;
+    @include btn($fz-standart, $dirtwhite, $orange, $pd-1);
+    @include border(1px, $orange);
+    @include transition;
+  }
+
+  &__btn:hover {
+    @include btn-hover($orange, $dirtwhite, $f-600);
+    @include shadow;
+  }
+
+  &__head {
+    font-size: $fz-xl;
+    font-weight: $f-400;
+  }
+
+  &__text {
+    font-size: $fz-m;
+    line-height: $l-141;
+  }
+}
+
+@media screen and (max-width: $xl) {
+  .article-1 {
+    padding: $pd-8-pc;
+
+    &__head {
+      font-size: $fz-xxl;
+    }
+
+    &__btn {
+      font-size: $fz-s;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+
+  .article-4 {
+    padding: $pd-7-pc;
+
+    &__btn {
+      font-size: $fz-standart;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+}
+
+@media screen and (max-width: $l) {
+  .article-1 {
+    padding: $pd-6-pc;
+
+    &__text {
+      font-size: $fz-s;
+      line-height: $l-120;
+    }
+
+    &__head {
+      font-size: $fz-xl;
+    }
+
+    &__btn {
+      font-size: $fz-xs;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+
+  .article-4 {
+    padding: $pd-5-pc;
+
+    &__head {
+      font-size: $fz-l;
+      font-weight: $f-400;
+    }
+
+    &__text {
+      font-size: $fz-s;
+      line-height: $l-120;
+    }
+
+    &__btn {
+      font-size: $fz-xs;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+}
+
+@media screen and (max-width: $m) {
+  .article-1 {
+    padding: $pd-5-pc;
+
+    &__head {
+      font-size: $fz-l;
+    }
+
+    &__text {
+      font-size: $fz-xs;
+      line-height: $l-110;
+    }
+
+    &__btn {
+      font-size: $fz-xxs;
+      padding: $pd-1;
+      width: $w-45;
+    }
+  }
+
+  .article-4 {
+    padding: $pd-4-pc;
+
+    &__head {
+      font-size: $fz-standart;
+      font-weight: $f-400;
+    }
+
+    &__text {
+      font-size: $fz-xs;
+      line-height: $l-110;
+    }
+
+    &__btn {
+      font-size: $fz-xxs;
+      padding: $pd-1;
+      width: $w-45;
+    }
+  }
+}
+
+@media screen and (max-width: $s) {
+  .article-1 {
+    padding: $pd-12-pc;
+
+    &__text {
+      font-size: $fz-standart;
+      line-height: $l-120;
+    }
+
+    &__head {
+      font-size: $fz-xl;
+    }
+
+    &__btn {
+      font-size: $fz-xs;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+
+  .article-4 {
+    padding: $pd-10-pc;
+
+    &__head {
+      font-size: $fz-l;
+    }
+
+    &__text {
+      font-size: $fz-standart;
+      line-height: $l-120;
+    }
+
+    &__btn {
+      font-size: $fz-xs;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .article-1 {
+    padding: $pd-12-pc;
+
+    &__text {
+      font-size: $fz-xs;
+      line-height: $l-110;
+    }
+
+    &__head {
+      font-size: $fz-l;
+    }
+
+    &__btn {
+      font-size: $fz-xxs;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+
+  .article-4 {
+    padding: $pd-9-pc;
+
+    &__head {
+      font-size: $fz-standart;
+    }
+
+    &__text {
+      font-size: $fz-xs;
+      line-height: $l-110;
+    }
+
+    &__btn {
+      font-size: $fz-xxs;
+      padding: $pd-1;
+      width: $w-50;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: $between;
+  align-items: $center;
+
+  &__description {
+    padding-bottom: $pd-10;
+  }
+
+  &__header--main {
+    font-size: $fz-l;
+    text-align: $center;
+    margin: $pd-20 $pd-0;
+    font-weight: $f-500;
+  }
+
+  &__hook {
+    text-align: $center;
+    font-size: $fz-s;
+    margin: $pd-20 $pd-0;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: $between;
+    align-items: $center;
+    width: $w-100;
+  }
+
+  &__card {
+    width: $w-23;
+    background-color: $lightgrey;
+    margin: $pd-10 0;
+    @include transition;
+  }
+
+  &__card:hover {
+    @include shadow;
+    background-color: $white;
+  }
+
+  &__img {
+    width: $w-100;
+  }
+
+  &__about {
+    width: $w-100;
+    height: $h-normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: $between;
+    padding-left: $pd-20;
+    padding-bottom: $pd-20;
+  }
+
+  &__header {
+    font-size: $fz-m;
+    line-height: $l-24;
+    font-weight: $f-500;
+  }
+
+  &__more {
+    text-transform: capitalize;
+    font-size: $fz-xs;
+    font-weight: $f-600;
+    color: $black;
+    line-height: $l-24;
+    text-decoration: none;
+  }
+
+  &__more::after {
+    content: $right-arrow;
+    font-size: $fz-standart;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: $l) {
+    &__cards {
+      justify-content: $between;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: $w-45;
+    }
+
+    &__img {
+      width: $w-100;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: $m) {
+    &__about {
+      height: $h-small;
+    }
+  }
+
+  @media screen and (max-width: $s) {
+    &__card {
+      width: $w-100;
+    }
+
+    &__about {
+      height: $h-normal;
+    }
+  }
+}

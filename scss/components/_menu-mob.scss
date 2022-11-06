@@ -1,0 +1,41 @@
+.bar1,
+.bar2,
+.bar3 {
+  width: $w--35;
+  height: 3px;
+  background-color: $black;
+  margin: $pd-6 $pd-0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.header__menu--mobile {
+  display: none;
+  position: absolute;
+  width: $w-100;
+  left: 0;
+  top: 60px;
+  background-color: $lightgrey;
+  margin: $pd-20 $pd-0;
+  padding-bottom: $pd-20;
+}
+
+.open .header__menu--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: $center;
+  justify-content: $start;
+}

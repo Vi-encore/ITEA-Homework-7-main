@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  overflow-x: hidden;
+  background-color: $white;
+  color: $black;
+}
+
+ul {
+  padding: $pd-0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  padding: $pd-8-pc;
+}

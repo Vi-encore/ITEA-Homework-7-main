@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: $between;
+  padding: $pd-1half $pd-1;
+  font-size: $fz-standart;
+
+  &__logo {
+    display: flex;
+    align-items: $center;
+    padding-left: $pd-3;
+  }
+
+  &__link {
+    font-family: $logo-font;
+    text-decoration: none;
+    color: $black;
+  }
+
+  &__hamburger-icon {
+    display: none;
+  }
+
+  &__btn {
+    @include btn($fz-standart, $white, $orange, $pd-1);
+    @include border(1px, $orange);
+    @include transition;
+  }
+
+  &__btn:hover {
+    @include btn-hover($orange, $white, $f-600);
+    border: none;
+    @include shadow;
+  }
+
+  @media screen and (max-width: $m) {
+    &__menu,
+    &__btn--fullscreen {
+      display: none;
+    }
+
+    &__hamburger-icon {
+      display: block;
+    }
+
+    &__logo {
+      padding-left: $pd-1;
+    }
+  }
+}

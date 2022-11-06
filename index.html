@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freebie</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Homemade+Apple:regular"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"><a class="header__link" href="#">logo</a></div>
+      <nav class="header__menu">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#home">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about_us">About us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#banner">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#blog">Products</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="header__btn header__btn--fullscreen"> Gift Finder </a>
+
+      <div class="header__hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="header__menu--mobile">
+          <ul class="menu--mobile menu">
+            <li class="menu__item">
+              <a href="#home" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about_us" class="menu__link">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#banner" class="menu__link">Services</a>
+            </li>
+            <li class="menu__item">
+              <a href="#blog" class="menu__link">Products</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__btn">Gift Finder</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="heropage" id="home">
+        <div class="heropage__line">
+          <div class="article-1 heropage__article">
+            <h1 class="article-1__head">
+              Find a gift for your wife or girlfriend
+            </h1>
+            <p class="article-1__text">
+              Struggling to find a gift for your wife or girlfriend? No problem!
+            </p>
+            <a href="" class="article-1__btn">find gift now</a>
+          </div>
+          <div class="article-2 heropage__article">
+            <img class="heropage__img" src="img/img-1.png" alt="Happy couple" />
+          </div>
+        </div>
+        <div class="heropage__line">
+          <div class="article-3 heropage__article">
+            <img
+              class="heropage__img"
+              src="img/img-2.png"
+              alt="Thank you card"
+            />
+          </div>
+          <div class="article-4 heropage__article">
+            <h3 class="article-4__head">How we work</h3>
+            <p class="article-4__text">
+              We’ve actually already asked hundreds of women what they want, and
+              made a database with the results. All you have to do is take our
+              short survey that only takes seconds, and our proprietary
+              algorithm will match you with a few perfect gift options.
+            </p>
+            <a href="#" class="article-4__btn">learn more</a>
+          </div>
+        </div>
+      </section>
+      <section class="about-us container" id="about_us">
+        <div class="about-us__description">
+          <h3 class="about-us__header--main">Gifts for all Occasions</h3>
+          <p class="about-us__hook">
+            "Try our web app to find the best gifts for all occasions"
+          </p>
+        </div>
+        <div class="about-us__cards">
+          <div class="about-us__card">
+            <img
+              class="about-us__img"
+              src="img/birthday-1-card.png"
+              alt="Birthday"
+            />
+            <div class="about-us__about">
+              <p class="about-us__header">Birthday</p>
+              <a class="about-us__more" href="#">see more</a>
+            </div>
+          </div>
+          <div class="about-us__card">
+            <img
+              class="about-us__img"
+              src="img/aniv-2-card.png"
+              alt="Anniversary"
+            />
+            <div class="about-us__about">
+              <p class="about-us__header">Anniversary</p>
+              <a class="about-us__more" href="#">see more</a>
+            </div>
+          </div>
+          <div class="about-us__card">
+            <img
+              class="about-us__img"
+              src="img/valent-3-card.png"
+              alt="Valentine's Day"
+            />
+            <div class="about-us__about">
+              <p class="about-us__header">Valentine's Day</p>
+              <a class="about-us__more" href="#">see more</a>
+            </div>
+          </div>
+          <div class="about-us__card">
+            <img
+              class="about-us__img"
+              src="img/christmas-4-card.png"
+              alt="Christmas"
+            />
+            <div class="about-us__about">
+              <p class="about-us__header">Christmas</p>
+              <a class="about-us__more" href="#">see more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner" id="banner">
+        <div class="banner__info">
+          <h3 class="banner__header">Ready to get started?</h3>
+          <p class="banner__sign-up">Sign up or contact us</p>
+        </div>
+        <div class="banner__btns">
+          <a class="banner__btn banner__btn--1" href="#">Find gift now</a>
+          <a class="banner__btn banner__btn--2" href="#">how it works</a>
+        </div>
+      </section>
+      <section class="blog container" id="blog">
+        <div class="blog__info">
+          <h3 class="blog__header">Our Best Blogs Ever</h3>
+          <p class="blog__hook">
+            “Try our blog to find the best tips and tricks to select your gift”
+          </p>
+        </div>
+        <div class="blog__grid">
+          <div class="blog__item--main">
+            <img class="blog__img" src="img/blog-img.png" alt="Happy couple" />
+            <div class="blog__description">
+              <p class="blog__hook--card">Mr. John Doe</p>
+              <h4 class="blog__header--maincard">
+                The best way to wish your wife
+              </h4>
+              <a href="#" class="blog__more">Read More</a>
+            </div>
+          </div>
+          <div class="blog__item">
+            <h4 class="blog__header--card">
+              Database to find the gifts for your girlfriend
+            </h4>
+            <p class="blog__info--card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <a href="#" class="blog__more--card">Read More</a>
+          </div>
+          <div class="blog__item">
+            <h4 class="blog__header--card">
+              How Artificial Intelligence read your mind to find the best gift
+            </h4>
+            <p class="blog__info--card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <a href="#" class="blog__more--card">Read More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

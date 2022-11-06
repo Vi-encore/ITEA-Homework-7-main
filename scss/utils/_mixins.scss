@@ -1,0 +1,39 @@
+@mixin btn($font-size, $bg-color, $color, $padding) {
+  text-decoration: none;
+  text-align: center;
+  font-size: $font-size;
+  background-color: $bg-color;
+  color: $color;
+  padding: $padding;
+  text-transform: uppercase;
+  border-radius: $pd-5;
+}
+
+@mixin btn-hover($bg-color, $color, $f-weight) {
+  background-color: $bg-color;
+  color: $color;
+  font-weight: $f-weight;
+}
+
+@mixin border($size, $color) {
+  border: $size solid $color;
+}
+
+@mixin shadow {
+  box-shadow: 4px 4px 10px $shadow-light;
+}
+
+@mixin shadow-text {
+  text-shadow: 5px 5px 10px $shadow-light;
+}
+
+@mixin transition {
+  transition: all 150ms ease-in-out;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: $center;
+  justify-content: $between;
+}
+

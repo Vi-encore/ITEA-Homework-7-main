@@ -1,0 +1,93 @@
+.banner {
+  background-color: $orange;
+  @include flex-between;
+  padding: $pd-4-pc $pd-15-pc;
+
+  &__info {
+    font-size: $fz-l;
+  }
+
+  &__header,
+  &__sign-up {
+    margin: 0;
+    line-height: $l-141;
+  }
+
+  &__header {
+    font-family: "Gilroy Bold";
+  }
+
+  &__btns {
+    @include flex-between;
+  }
+
+  &__btn {
+    @include btn($fz-standart, $black, $white, $fz-s $pd-1half);
+
+    line-height: $l-24;
+    margin: 0 $pd-10;
+    width: 200px;
+    @include transition;
+  }
+
+  &__btn:hover {
+    @include shadow;
+  }
+
+  &__btn--1:hover {
+    @include btn-hover($white, $black, $f-600);
+  }
+
+  &__btn--2:hover {
+    @include btn-hover($black, $orange, $f-600);
+  }
+
+  &__btn--2 {
+    background-color: $orange;
+    @include border(1px, $black);
+    color: $black;
+  }
+
+  @media screen and (max-width: $xl) {
+    &__info {
+      font-size: $fz-m;
+    }
+
+    &__btn {
+      font-size: $fz-s;
+      padding: $pd-10 $pd-1;
+      width: 180px;
+    }
+  }
+
+  @media screen and (max-width: $l) {
+    flex-direction: column;
+
+    &__info {
+      margin-bottom: $pd-10;
+      font-size: $fz-l;
+    }
+  }
+
+  @media screen and (max-width: $m) {
+    &__info {
+      font-size: $fz-m;
+    }
+
+    &__btn {
+      font-size: $fz-xs;
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: $s) {
+    &__btns {
+      flex-direction: column;
+    }
+
+    &__btn {
+      margin: $pd-10 auto;
+      font-size: $fz-s;
+    }
+  }
+}

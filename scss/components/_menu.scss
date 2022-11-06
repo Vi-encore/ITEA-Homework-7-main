@@ -1,0 +1,32 @@
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: $between;
+
+  &__item {
+    padding: $pd-0 $pd-10;
+    @include transition;
+  }
+
+  &__item:hover {
+    font-weight: $f-700;
+    @include shadow-text;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $black;
+  }
+
+  @media screen and (max-width: $m) {
+    &__item {
+      padding: $pd-5 $pd-0;
+    }
+
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: $center;
+    }
+  }
+}
